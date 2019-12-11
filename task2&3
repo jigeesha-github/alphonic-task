@@ -1,0 +1,11 @@
+import time
+v='hello'
+    
+import json
+s=json.dumps(v)
+with open ("E:\\data.txt","w") as f:
+    f.write(s)
+time.sleep(60)
+with open ("E:\\data.txt","w") as f:
+    v='world'
+    f.write(v)    
